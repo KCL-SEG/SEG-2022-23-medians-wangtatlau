@@ -10,8 +10,12 @@ while True:
     else:
         break
 
+numbers.sort()
 lengthOfNum = len(numbers)
-sumOfNum = sum(numbers)
-medianOfNum = sumOfNum/lengthOfNum
 
-print(medianOfNum)
+if lengthOfNum % 2 == 0:
+    medianNum = (numbers[int(lengthOfNum/2)] + numbers[int(lengthOfNum/2) - 1]) / 2
+else:
+    medianNum = numbers[int(lengthOfNum/2)]
+
+print(medianNum)
