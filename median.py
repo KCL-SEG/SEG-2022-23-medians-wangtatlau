@@ -9,9 +9,9 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-        
+
 lengthOfNum = len(numbers)
 sumOfNum = sum(numbers)
 medianOfNum = sumOfNum/lengthOfNum
 
-print(numbers)
+print(medianOfNum)
